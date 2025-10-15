@@ -1,20 +1,20 @@
-#incluir <stdio.h>
+#include <stdio.h>
 
-int principal() {
+int main() {
     int num1, num2;
 
-    printf("Ingrese el primer número: ");
+    printf("Ingrese el primer numero: ");
     scanf("%d", &num1);
     printf("Ingrese el segundo numero: ");
     scanf("%d", &num2);
 
-    si (num1 > num2) {
+    if (num1 > num2) {
         printf("El mayor es: %d\n", num1);
-    } de lo contrario si (num2 > num1) {
+    } else if (num2 > num1) {
         printf("El mayor es: %d\n", num2);
-    } demás {
+    } else {
         printf("Los dos numeros son iguales\n");
     }
 
-    devuelve 0;
+    return 0;
 }

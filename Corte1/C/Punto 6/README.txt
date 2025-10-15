@@ -1,21 +1,21 @@
-#incluir <stdio.h>
+#include <stdio.h>
 
-int principal() {
-    int a, b, c, máx, mín;
+int main() {
+    int a, b, c, max, min;
 
     printf("Ingrese tres valores enteros: ");
     scanf("%d %d %d", &a, &b, &c);
 
-    máximo = a;
-    si (b > máx) máx = b;
-    si (c > máx) máx = c;
+    max = a;
+    if (b > max) max = b;
+    if (c > max) max = c;
 
-    mín = a;
-    si (b < min) min = b;
-    si (c < min) min = c;
+    min = a;
+    if (b < min) min = b;
+    if (c < min) min = c;
 
-    printf("El valor máximo es: %d\n", max);
+    printf("El valor maximo es: %d\n", max);
     printf("El valor minimo es: %d\n", min);
 
-    devuelve 0;
+    return 0;
 }

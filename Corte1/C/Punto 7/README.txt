@@ -1,23 +1,23 @@
-#incluir <stdio.h>
+#include <stdio.h>
 
-int principal() {
-    nota flotante;
+int main() {
+    float nota;
 
     printf("Ingrese la nota del examen (0 a 10): ");
-    scanf("%f", ¬a);
+    scanf("%f", &nota);
 
-    si (nota < 5)
+    if (nota < 5)
         printf("Suspenso");
-    de lo contrario si (nota >= 5 && nota < 7)
+    else if (nota >= 5 && nota < 7)
         printf("Aprobado");
-    de lo contrario si (nota >= 7 && nota < 9)
+    else if (nota >= 7 && nota < 9)
         printf("Notable");
-    de lo contrario si (nota >= 9 y nota < 10)
+    else if (nota >= 9 && nota < 10)
         printf("Sobresaliente");
-    de lo contrario si (nota == 10)
-        printf("Matrícula de honor");
-    demás
-        printf("Nota inválida");
+    else if (nota == 10)
+        printf("Matricula de honor");
+    else
+        printf("Nota invalida");
 
-    devuelve 0;
+    return 0;
 }

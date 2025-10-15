@@ -1,8 +1,8 @@
-#incluir <stdio.h>
+#include <stdio.h>
 
-int principal() {
-    producto char[30];
-    precio flotante, total;
+int main() {
+    char producto[30];
+    float precio, total;
     int unidades;
 
     printf("Ingrese el nombre del producto: ");
@@ -20,5 +20,5 @@ int principal() {
     printf("Unidades: %d\n", unidades);
     printf("Precio total: %.2f\n", total);
 
-    devuelve 0;
+    return 0;
 }

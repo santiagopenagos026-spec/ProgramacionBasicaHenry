@@ -1,6 +1,6 @@
-#incluir <stdio.h>
+#include <stdio.h>
 
-int principal() {
+int main() {
     char nombre[30];
     float horas, valorHora, bruto, retencion, neto;
 
@@ -14,7 +14,7 @@ int principal() {
     scanf("%f", &valorHora);
 
     bruto = horas * valorHora;
-    retención = bruto * 0.05;
+    retencion = bruto * 0.05;
     neto = bruto - retencion;
 
     printf("\nTrabajador: %s\n", nombre);
@@ -22,5 +22,5 @@ int principal() {
     printf("Retencion (5%%): %.2f\n", retencion);
     printf("Sueldo neto: %.2f\n", neto);
 
-    devuelve 0;
+    return 0;
 }

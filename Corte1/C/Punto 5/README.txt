@@ -1,24 +1,24 @@
-#incluir <stdio.h>
-#incluir <stdlib.h>
-#include <tiempo.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int principal() {
-    apuesta flotante;
+int main() {
+    float apuesta;
     int moneda;
 
-    srand(tiempo(NULL));
+    srand(time(NULL));
 
     printf("Ingrese la cantidad a apostar: ");
     scanf("%f", &apuesta);
 
     moneda = rand() % 2; // 0 = cruz, 1 = cara
 
-    si (moneda == 1) {
+    if (moneda == 1) {
         printf("Salio CARA, ganas el doble!\n");
         printf("Ganancia: %.2f\n", apuesta * 2);
-    } demás {
+    } else {
         printf("Salio CRUZ, perdiste todo.\n");
     }
 
-    devuelve 0;
+    return 0;
 }

@@ -1,23 +1,23 @@
-#incluir <stdio.h>
+#include <stdio.h>
 
-int principal() {
-    int año;
+int main() {
+    int ano;
     int leido = 0;
     
     
-    printf("Ingrese el año:");
+    printf("Ingrese el ano:");
     scanf("%d", &ano);
 
-	si (ano % 4 == 0) {
+	if (ano % 4 == 0) {
 		
-		printf("El año es bisiesto");
+		printf("El ano es bisiesto");
 	}
 		
 		
-		de lo contrario si (ano % 4 !=0){
+		else if (ano % 4 !=0){
 		
 			
-			printf("El año no es bisiesto");
+			printf("El ano no es bisiesto");
 		}
 	
 	
